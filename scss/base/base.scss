@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Основные стили для десктопа */
+body {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  /* ...другие стили... */
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header, .footer {
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Добавьте другие элементы, которые нужно адаптировать */
+}
+
+:root {
+  --orange: #ff8139;
+  --pink: #ff3998;
+  --green: #39ffa0;
+  --red: #ff3939;
+  --light-green: #edfff6;
+  --light-orange: #fff0e8;
+  --accent-color1: #ffffff;
+  --accent-color2: #ffffff;
+  --accent-color3: #ffffff;
+  --card-color: #cb22f5;
+  --background: #111111;  /* Темный фон по умолчанию */
+  --font-family: "Inter", sans-serif;
+}
+
+[data-theme="light"] {
+  --background: #ffffff;  /* Белый фон для светлой темы */
+  --accent-color1: #000000;  /* Черный текст */
+  --accent-color2: #eeeeee;
+  --accent-color3: #777777;
+  --card-color: #eeeeee;  /* Светлый цвет карточек */
+}
+
+[data-theme="dark"] {
+  --background: #111111;  /* Темный фон для темной темы */
+  --accent-color1: #ffffff;  /* Белый текст */
+  --accent-color2: #cccccc;
+  --accent-color3: #bbbbbb;
+  --card-color: #222222;  /* Темные карточки */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app-container {
+  background-color: var(--background);  /* Фон в зависимости от темы */
+  font-family: var(--font-family);
+  overflow-x: hidden;
+  transition: 0.5s ease-in-out;
+  padding: 2rem 4rem;
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 1080px) {
+  .app-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: var(--background);  /* Подстраиваем цвет скроллбара */
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--orange);  /* Оранжевый цвет для скроллбара */
+}

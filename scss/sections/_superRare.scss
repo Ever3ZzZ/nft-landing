@@ -1,0 +1,54 @@
+.super-rare {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .title {
+      color: var(--accent-color1);
+      font-size: 2.4rem;
+    }
+    .description {
+      color: var(--accent-color3);
+      a {
+        color: var(--accent-color3);
+        font-weight: bold;
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .description {
+    font-size: 0.6rem;
+  }
+  
+
+  .title {
+    
+  }
+  
+  .super-rare {
+   
+    width: 1000vw;
+    .cards {
+      overflow: auto;
+      justify-content: flex-start;
+      gap: 2rem;
+      
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .card {
+        zoom: 0.7;
+      }
+    }
+  }
+}

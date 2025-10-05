@@ -14,7 +14,7 @@ export default function Free() {
         </div>
         <div className="content">
           <div className="image">
-            <img src="/nft-landing/public/icon.png" alt="icon" />
+            <img src={`${import.meta.env.BASE_URL}icon.png`} alt="icon" />
           </div>
           <h2 className="title">Free NFT for early birds</h2>
           <p className="description">

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImSun } from "react-icons/im";
 import { BsFillMoonFill } from "react-icons/bs";
-import logo from './logo.png'; // Импортируем логотип
+import logo from "../public/logo.png";
 
 const AnimatedLinks = ({ changeTheme, currentTheme }) => {
   const [clicked, setClicked] = useState(false);
@@ -50,7 +50,7 @@ export default function Navbar({ changeTheme, currentTheme }) {
     <nav className={currentTheme === "dark" ? "dark" : "light"}> {/* Добавляем динамичные классы для фона */}
       <div className="brand-container">
         <div className="brand">
-          <img src={logo} alt="nft_logo" />
+          <img src="/nft-landing/public/logo.png" alt="nft_logo" />
         </div>
         <div className="toggle-container">
           <div className="toggle" onClick={() => setNavState(!navState)}>

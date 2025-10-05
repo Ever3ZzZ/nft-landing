@@ -6,7 +6,7 @@ export default function Like() {
       <div className="container">
         <div className="content">
           <div className="image">
-            <img src="/eth2.png" alt="eth2" />
+            <img src={`${import.meta.env.BASE_URL}eth2.png`} alt="eth2" />
           </div>
           <h2 className="title">An NFT like no other</h2>
           <p className="description">

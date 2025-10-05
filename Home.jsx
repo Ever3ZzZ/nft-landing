@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         <div className="image-container">
           <div className="image">
-          <img src="/home.png" alt="Home" />
+          <img src="/nft-landing/public/home.png" alt="Home" />
 
           </div>
           <div className="ellipse-container">

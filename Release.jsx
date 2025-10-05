@@ -36,7 +36,7 @@ export default function Release() {
         </div>
         <div className="image">
           {/* Контейнер для изображения релиза и декоративного элемента. */}
-          <img src="/release1.png" alt="release1" />
+          <img src="/nft-landing/public/release1.png" alt="release1" />
           {/* Картинка релиза. Путь указывает на файл в папке public. */}
           <div className="ellipse pink"></div>
           {/* Декоративный элемент в виде эллипса с классом "pink". */}
@@ -48,7 +48,7 @@ export default function Release() {
         <div className="card-container">
           {/* Контейнер для компонента Card и декоративного эллипса. */}
           <Card
-            image="/release2.png"
+            image="/nft-landing/public/release2.png"
             alt="release2"
             series="Gloop Series"
             title="Purple Man"

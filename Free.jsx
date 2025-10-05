@@ -14,7 +14,7 @@ export default function Free() {
         </div>
         <div className="content">
           <div className="image">
-            <img src="/icon.png" alt="icon" />
+            <img src="/nft-landing/public/icon.png" alt="icon" />
           </div>
           <h2 className="title">Free NFT for early birds</h2>
           <p className="description">
@@ -27,7 +27,7 @@ export default function Free() {
         
         <div className="card1"> {/*Дает пропсы для Card*/}
         <Card
-          image ="/super1.png" alt="release2" 
+          image =  "/nft-landing/public/super1.png" alt="release2"
           series = "Floop Series"
           title = "Purple Man"
           price = {2.99}
@@ -37,7 +37,7 @@ export default function Free() {
         </div>
         <div className="card2">
         <Card
-          image ="/release2.png" alt="release2" 
+          image =  "/nft-landing/public/release2.png" alt="release2"
           series = "Gloop Series"
           title = "Purple Man"
           price = {2.99}

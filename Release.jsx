@@ -36,7 +36,7 @@ export default function Release() {
         </div>
         <div className="image">
           {/* Контейнер для изображения релиза и декоративного элемента. */}
-          <img src="/nft-landing/public/release1.png" alt="release1" />
+          <img src={`${import.meta.env.BASE_URL}release1.png`} alt="release 1" />
           {/* Картинка релиза. Путь указывает на файл в папке public. */}
           <div className="ellipse pink"></div>
           {/* Декоративный элемент в виде эллипса с классом "pink". */}

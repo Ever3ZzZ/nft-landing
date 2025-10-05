@@ -27,7 +27,7 @@ export default function Free() {
         
         <div className="card1"> {/*Дает пропсы для Card*/}
         <Card
-          image =  "/nft-landing/public/super1.png" alt="release2"
+          image = {`${import.meta.env.BASE_URL}super1.png`}
           series = "Floop Series"
           title = "Purple Man"
           price = {2.99}
@@ -37,7 +37,7 @@ export default function Free() {
         </div>
         <div className="card2">
         <Card
-          image =  "/nft-landing/public/release2.png" alt="release2"
+          image = {`${import.meta.env.BASE_URL}release2.png`}
           series = "Gloop Series"
           title = "Purple Man"
           price = {2.99}

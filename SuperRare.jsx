@@ -5,7 +5,7 @@ import Card from "./Card";
 export default function SuperRare() {
   const data = [
     {
-      image: "/nft-landing/public/super1.png",
+      image: `${import.meta.env.BASE_URL}super1.png`,
       series: "Gloop Series",
       title: "Purple Man",
       price: 2.99,
@@ -14,7 +14,7 @@ export default function SuperRare() {
       week: 2,
     },
     {
-      image: "/nft-landing/public/super2.png",
+      image: `${import.meta.env.BASE_URL}super2.png`,
       series: "Gloop Series",
       title: "Beige",
       price: 3.99,
@@ -22,7 +22,7 @@ export default function SuperRare() {
       time: 2,
     },
     {
-      image: "/nft-landing/public/super3.png",
+      image: `${import.meta.env.BASE_URL}super3.png`,
       series: "Gloop Series",
       title: "Red Man",
       price: 4.99,
@@ -30,7 +30,7 @@ export default function SuperRare() {
       time: 3,
     },
     {
-      image: "/nft-landing/public/super4.png",
+      image: `${import.meta.env.BASE_URL}super4.png`,
       series: "Gloop Series",
       title: "Green Man",
       price: 5.99,

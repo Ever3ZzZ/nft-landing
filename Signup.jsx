@@ -16,7 +16,7 @@ export default function Signup() {
         </div>
         <div className="image-container">
           <div className="image">
-          <img src="/nft-landing/public/signup.png" alt="signup" />
+            <img src={`${import.meta.env.BASE_URL}signup.png`} alt="signup" />
 
           </div>
           <div className="ellipse-container">

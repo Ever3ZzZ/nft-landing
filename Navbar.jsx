@@ -50,7 +50,7 @@ export default function Navbar({ changeTheme, currentTheme }) {
     <nav className={currentTheme === "dark" ? "dark" : "light"}> {/* Добавляем динамичные классы для фона */}
       <div className="brand-container">
         <div className="brand">
-          <img src="/nft-landing/public/logo.png" alt="nft_logo" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="nft_logo" />
         </div>
         <div className="toggle-container">
           <div className="toggle" onClick={() => setNavState(!navState)}>

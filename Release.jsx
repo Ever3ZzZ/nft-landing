@@ -48,7 +48,7 @@ export default function Release() {
         <div className="card-container">
           {/* Контейнер для компонента Card и декоративного эллипса. */}
           <Card
-            image="/nft-landing/public/release2.png"
+            image={`${import.meta.env.BASE_URL}release2.png`}
             alt="release2"
             series="Gloop Series"
             title="Purple Man"

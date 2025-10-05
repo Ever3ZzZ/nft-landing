@@ -35,7 +35,7 @@ export default function Footer() {
         {/* Брендовый блок */}
         <div className="brand-container">
           <div className="brand">
-            <img src="/nft-landing/public/logo.png" alt="logo" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="logo" />
           </div>
           <p>Exclusive NFT Collection</p>
           <ul>

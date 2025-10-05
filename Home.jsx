@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         <div className="image-container">
           <div className="image">
-          <img src="/nft-landing/public/home.png" alt="Home" />
+          <img src={`${import.meta.env.BASE_URL}home.png`} alt="Home" />
 
           </div>
           <div className="ellipse-container">
